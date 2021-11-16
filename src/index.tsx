@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Button, {ButtonProps} from './App';
 import reportWebVitals from './reportWebVitals';
+
+const p: ButtonProps = {
+  name: 'test',
+};
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Button {...p} />
   </React.StrictMode>,
   document.getElementById('root')
 );
